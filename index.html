@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Meu Primeiro Site</title>
   </head>
-  <body>
+  <body oncontextmenu="return false">
     <header>
       <img id="ods" src="./assets/17-transformar-nosso-mundo.png" alt="ODS" />
       <h1>Objetivo 15</h1>
@@ -98,6 +98,19 @@
           subsistência sustentável
         </li>
       </ul>
+
+      <h2>Para mais informações sobre essa e as outras 16 ODS's</h2>
+      <a href="https://nacoesunidas.org/pos2015/" target="_blank"
+        ><h2>Clique Aqui!</h2></a
+      >
     </div>
   </body>
+  <script>
+    document.onmousedown = disableclick;
+    function disableclick(event) {
+      if (event.button == 2) {
+        return false;
+      }
+    }
+  </script>
 </html>
